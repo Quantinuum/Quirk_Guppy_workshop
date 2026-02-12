@@ -336,6 +336,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "guppylang", extra = ["pytket"] },
+    { name = "ipykernel" },
     { name = "jupyterlab" },
     { name = "matplotlib" },
 ]
@@ -343,6 +344,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "guppylang", extras = ["pytket"], specifier = ">=0.21.8" },
+    { name = "ipykernel", specifier = ">=7.2.0" },
     { name = "jupyterlab", specifier = ">=4.5.3" },
     { name = "matplotlib", specifier = ">=3.10.8" },
 ]
