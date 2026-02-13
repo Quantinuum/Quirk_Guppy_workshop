@@ -11,9 +11,7 @@ def plot_results(
     counts_dict = sim_result.register_counts()["c"]
     sorted_shots = counts_dict.most_common()
     n_most_common_strings = sorted_shots[:n_strings]
-    x_axis_values = [
-        "|" + str(entry[0]) + ">" for entry in n_most_common_strings
-    ]  # basis states
+    x_axis_values = [f"|{entry[0]}>" for entry in n_most_common_strings]  # basis states
     y_axis_values = [entry[1] for entry in n_most_common_strings]  # counts
 
     if dark_mode:
